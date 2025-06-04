@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌤️ ClimaCast App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="weather-app glass">
+    <h1>🌍 ClimaCast App</h1>
+
+    <div class="controls">
+      <input type="text" id="locationInput" placeholder="🌆 Enter city name" />
+      <button onclick="getWeather()">🔍</button>
+      <button id="micBtn">🎤</button>
+    </div>
+
+    <div class="toggles">
+      <label>
+        <input type="checkbox" id="unitToggle" onchange="toggleUnits()"> °C/°F
+      </label>
+      <label>
+        <input type="checkbox" id="themeToggle" onchange="toggleTheme()"> 🌙 Dark Mode
+      </label>
+    </div>
+
+    <button onclick="useGeolocation()">📍 Use My Location</button>
+
+    <div id="weatherResult"></div>
+    <div id="forecastResult"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
